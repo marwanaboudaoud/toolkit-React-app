@@ -1,0 +1,82 @@
+.create-post-form {
+    label {
+        margin: 1.5rem 0 0.5rem 0;
+        color: $darkGray;
+        font-size: 12px;
+        letter-spacing: 0;
+        line-height: 13px;
+    }
+
+    select {
+        background-color: $lightestGray;
+        font-size: .75rem;
+        border: none;
+        height: 39px;
+        &:focus-visible {
+            outline: none;
+        }
+        &:required:invalid {
+            outline: none;
+            color: $normalLightGray;
+            font-style: italic;
+        }
+    }
+
+    option[value=""][disabled] {
+        display: none;
+    }
+
+    option {
+        color: black;
+    }
+
+    input {
+        height: 39px;
+        &::placeholder {
+            color: $normalLightGray;
+            font-size: .75rem;
+            font-style: italic;
+            &:focus-visible {
+                outline: none;
+            }
+        }
+    }
+
+    textarea {
+        height: 214px;
+        margin-bottom: 1rem;
+    }
+
+    input,
+    textarea {
+        background-color: $lightestGray;
+        border: none;
+        &:focus-visible {
+            outline: none;
+        }
+        
+    }
+
+    input[type="file"] {
+        display: none;
+    }
+
+    .upload-image-input {
+        display: flex;
+        background-color: $lightestGray;
+        button {
+            margin: 0.625rem 0;
+        }
+        .camera-icon {
+            margin: 1rem;
+        }
+    }
+
+    .success-message {
+        color: $succsessGreen;
+    }
+
+    .error-image-message {
+        color: $dangerRed;
+    }
+}

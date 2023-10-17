@@ -1,0 +1,52 @@
+.post-card {
+    height: 217px;
+    margin: 0.75rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: unset;
+
+    &.side-cards {
+        width: calc(50% - 1.5rem);
+    }
+
+    .card-img-top {
+        height: 72px;
+        border-top-left-radius: unset;
+        border-top-right-radius: unset;
+
+    }
+
+    .card-title {
+        font-size: 1rem;
+        @media screen and ($lg) {
+            font-size: 1.5rem;
+        }
+    }
+
+    .post-category {
+        position: absolute;
+        color: $white;
+        font-size: 0.5rem;
+        right: 1rem;
+        bottom: 0.625rem;
+    }
+
+    .post-created-date {
+        position: absolute;
+        color: $white;
+        font-size: 0.5rem;
+        left: 1rem;
+        bottom: 0.625rem;
+
+    }
+
+    .card-text {
+        font-size: 0.75rem;
+        color: $lightGray;
+        line-height: 19px;
+    }
+
+}
+
+.load-more-button {
+    margin-top: 7.125rem;
+}

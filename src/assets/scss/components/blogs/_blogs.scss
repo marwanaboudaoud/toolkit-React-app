@@ -1,0 +1,45 @@
+.blog-archive {
+    .blog-page-title {
+        position: absolute;
+        top: 113px;
+        left: 0;
+        right: 0;
+        color: $white;
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .custom-page-item {
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    .custom-page-link {
+        font-size: 0.75rem;
+        display: block;
+        padding: 0 12px;
+        text-decoration: none;
+        color: $darkGray;
+        background-color: $white;
+        cursor: pointer;
+    }
+
+    .custom-active a {
+        font-weight: bold;
+        background-color: $lighterGray;
+        border-radius: 13px;
+    }
+
+    .next,
+    .previous {
+        margin-top: -4px;
+        a {
+            text-decoration: none;
+            color: $primary;
+            font-size: .75rem;
+            line-height: 19px;
+        }
+    }
+
+}
