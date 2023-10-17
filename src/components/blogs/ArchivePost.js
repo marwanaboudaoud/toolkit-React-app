@@ -19,7 +19,7 @@ const ArchivePost = ({ post }) => {
                 <span className="post-created-date">{formatDate(created_at)}</span>
             </div>
             <div className="card-body overflow-hidden">
-                <h4 className="card-title fw-bold">{title}</h4>
+            <h4 className="card-title fw-bold">{title.length > 25 ? title.substring(0, 25) + "..." : title}</h4> 
                 <p className="card-text">{content}</p>
             </div>
         </div>

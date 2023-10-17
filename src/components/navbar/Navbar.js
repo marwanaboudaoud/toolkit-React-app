@@ -10,7 +10,7 @@ const NavBar = () => {
                     <img src={Logo} alt="logo" />
                 </div>
                 <ul className="navbar-nav mt-3 mt-md-0">
-                    <li className="nav-item active">
+                    <li className="nav-item active me-4">
                         <Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}>
                             Home
                         </Link>
